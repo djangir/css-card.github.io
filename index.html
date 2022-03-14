@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta name="google-site-verification" content="0QOBYw8JfgG8TGFX0rT96q3GElgIiOXjj5SOFW9CKdU" />
+        <meta http-equiv='content-language' content='en-gb'>
+        <meta name='birthday card, greeting card, html card, css card' content='html and css stylish calculator free.'>
+        <title>
+            Stylish Card Styles
+        </title>
+        <style>
+            .div1 {
+                height: 200px;
+                width: 200px;
+                border: solid;
+                position: absolute;
+                margin-left: calc(50% - 100px);
+                margin-top: 5%;
+                margin-bottom: 80%;
+                perspective: 300px;
+                background-color: red;
+                z-index: -1;
+                transition-delay: .5s;
+
+            }
+
+            .div2 {
+                transform-style: preserve-3d;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transition: transform 3s;
+                transform-origin: 100% 50%;
+                z-index: 3;
+            }
+
+            .div1:hover .div2 {
+                transform: rotatey(220deg);
+                transform: translate3d(-200px, 0px, 100px);
+            }
+
+            .div3 {
+                transform-style: preserve-3d;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transition: transform 3s;
+                transform-origin: 100% 50%;
+                transition-delay: .5s;
+                z-index: 2;
+            }
+
+            .div1:hover .div3 {
+                transform: rotatey(210deg);
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -210, 0, 1);
+            }
+
+            .div4 {
+                transform-style: preserve-3d;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transition: transform 3s;
+                transform-origin: 100% 50%;
+                transition-delay: 2.5s;
+                z-index: 1;
+            }
+
+            .div1:hover .div4 {
+                transform: rotatey(200deg);
+            }
+
+            .div5 {
+                transform-style: preserve-3d;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transition: transform 3s;
+                transition-delay: 4s;
+                z-index: 2;
+            }
+
+            .div1:hover .div5 {
+                transform: rotatey(180deg);
+            }
+
+            .div6 {
+                transform-style: preserve-3d;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transition: transform 3s;
+                transform-origin: 100% 50%;
+                transition-delay: .5s;
+                z-index: 0;
+            }
+
+            .div1:hover .div6 {
+                transform: rotatey(210deg);
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 210, 0, 1);
+            }
+
+            .front,
+            .back {
+                text-align: center;
+                font-size: 200%;
+                position: absolute;
+                background-color: yellow;
+                color: brown;
+                height: 200px;
+                width: 200px;
+                line-height: 200px;
+            }
+
+            .front1,
+            .back {
+                text-align: center;
+                font-size: 300%;
+                position: absolute;
+                background-color: pink;
+                color: brown;
+                height: 200px;
+                width: 200px;
+                line-height: 200px;
+            }
+
+            .back {
+                background-color: brown;
+                color: yellow;
+                transform: rotatey(180deg);
+                backface-visibility: hidden;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 style="text-align: center; margin: 5% auto auto 0;"> card :- Hover it </h1>
+
+        <div class="div1">
+            <div class="div2">
+                <div class="front">
+                    CLICK HERE
+                </div>
+                <div class="back">
+                    back 1
+                </div>
+            </div>
+
+            <div class="div3">
+                <div class="front1">
+                    fornt 2
+                </div>
+                <div class="back">
+                    back 2
+                </div>
+            </div>
+
+            <div class="div4">
+                <div class="front">
+                    fornt 3
+                </div>
+                <div class="back">
+                    back 3
+                </div>
+            </div>
+
+            <div class="div5">
+                <div class="front1">
+                    fornt 4
+                </div>
+                <div class="back">
+                    back 4
+                </div>
+            </div>
+
+            <div class="div6">
+                <div class="front1">
+                    fornt 5
+                </div>
+                <div class="back">
+                    back 5
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
